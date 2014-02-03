@@ -1,0 +1,84 @@
+nav {
+	margin: 0px auto;
+	width: 100%;
+}
+
+nav ul ul {
+	display: none;
+	
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul {
+	background-color: #D5D5D5;
+	padding: 0px 30px;
+	border-bottom: 1px solid #6b727c;  
+	list-style: none;
+	position: relative;
+
+}
+
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li:hover a {
+	color: #666;
+}
+	
+nav ul li a {
+	color: #000;
+	display: block; 
+	padding: 12px 25px;
+	text-decoration: none;
+}
+
+nav ul ul {
+	margin-top: -1px;
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+	border: 1px solid #6b727c;
+	border-radius: 0px 0px 10px 10px; 
+	background: #D5D5D5;
+}
+
+nav ul ul li {
+	margin-top: -1px;
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+nav ul ul li:last-child {
+	border-radius: 0px 0px 10px 10px; 
+}
+
+nav ul ul li:nth-child(odd) {
+	background-color: #fff;
+}	
+nav ul ul li:nth-child(even) {
+	background-color: #eee;
+}	
+
+nav ul ul li a {
+	padding: 8px 25px;
+	color: #000;
+}	
+			
+nav ul ul li a:hover {
+	color: #000;	
+}
+
+nav ul ul ul {
+	position: absolute; 
+	left: 100%; 
+	top:0%;
+}

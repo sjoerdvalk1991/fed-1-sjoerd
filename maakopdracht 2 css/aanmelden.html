@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/formulier.css">
+	<title>Maakopdracht Sjoerd Valk</title>
+</head>
+
+<body>
+		<nav>
+			<ul>
+				<li><a href="opleiding.html">Opleiding</a>
+					<ul>
+						<li><a href="#">Visie &amp; Beleid</a></li>
+						<li><a href="#">Studieprogramma</a></li>
+						<li><a href="#">Competenties</a></li>
+						<li><a href="#">Diploma</a></li>
+						<li><a href="#">Beroepen</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Onderwijsprogramma</a>
+					<ul>
+						<li><a href="#">Propedeuse</a></li>
+						<li><a href="#">V1</a></li>
+						<li><a href="#">V2</a></li>
+						<li><a href="#">Afstuderen</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Organisatie</a>
+					<ul>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Docenten</a></li>
+						<li><a href="#">Stagebureau</a></li>
+						<li><a href="#">Buitenlandbureau</a></li>
+						<li><a href="#">Examencommissie</a></li>
+						<li><a href="#">Decaan</a></li>
+
+					</ul>
+				</li>
+				<li><a href="#">Stage &amp; Projecten</a>
+					<ul>
+						<li><a href="aanmelden.html">Aanmelden</a></li>
+					</ul>
+				</li>			
+			</ul>											
+		</nav>
+
+<article>
+	<h1>Aanmelden</h1>
+	<section> 
+		<p>
+			Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+			Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+			lopen de studenten stage, in het tweede en afstudeerjaar.
+		</p>
+
+		<p>
+			CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+			Amsterdam.
+		</p>
+
+		<p>
+			Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+			Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+			Voor vragen of opmerkingen kunt u <a href="#">contact</a>  met ons op.
+
+			<form>
+				<fieldset>
+					<legend>Contactgegevens</legend>
+					<label for="name">Naam</label>
+					<input type="text" id="name" required/>
+					<br>
+
+					<label for="company">Bedrijf</label>
+					<input type="text" id="company" optional/>
+					<br>
+
+					<label for="address">Adres</label>
+					<input type="text" required id="address"/>
+					<br>
+
+					<label for="postcode">Postcode</label>
+					<input type="text" required id="postcode" />
+					<br>
+
+					<label for="place">Plaats</label>
+					<input type="text" required id="place"/>
+					<br>
+
+					<label for="telefoon">Telefoonnummer</label>
+					<input type="tel" id="telefoon" optional/>
+					<br>
+
+					<label for="email">Email</label>
+					<input type="email" required id="email" />
+					<br>
+
+					<input type="submit" value="Versturen">
+				</fieldset>
+			</form>
+
+			<form>
+				<legend>Aanmelden</legend>
+				<input type="radio" name="aanmeld_soort" value="project">Voor een project<br>
+				<input type="radio" name="aanmeld_soort" value="stagebedrijf">Als stagebedrijf
+			</form>
+
+			<form>
+			<fieldset>
+				<legend>Project</legend>
+				<label for="titel">Titel</label>
+				<input type="text" id="titel" />
+				<br>
+
+				<label for="opdrachtomschrijving">Opdrachtomschrijving</label>
+				<textarea id="opdrachtomschrijving"></textarea>					<br>
+
+				<label for="doelgroepomschrijving">Doelgroepomschrijving</label>
+				<textarea id="doelgroepomschrijving" ></textarea>
+				<br>
+
+				<label for="doelstelling">Doelstelling/ intentie van het project</label>
+				<textarea id="doelstelling"></textarea>
+				<br>
+
+				<label for="looptijd">Looptijd</label>
+				<input type="text" id="looptijd" />
+				<br>
+
+				<label for="deadline">Deadline</label>
+				<input type="date" id="deadline" />
+				<br>
+
+				<label for="geschikt_voor">Geschikt voor</label>
+				<select id="geschikt_voor">
+					<option>1. Eerstejaars studenten</option>
+					<option>2. Tweedejaars studenten</option>
+					<option>3. Derdejaars studenten</option>
+					<option>4. Afstudeer studenten</option>	
+					<option>5. Onbekend	</option>
+				</select>
+				<br>
+			</fieldset>
+		</form>
+
+		<form>
+			<fieldset>
+				<legend>Stage</legend>
+				<label for="geschikt_voor_project">Geschikt voor</label>
+				<select id="geschikt_voor_project">
+					<option>1. Tweedejaars studenten</option>
+					<option>2. Afstudeer studenten</option>
+					<option>3. Onbekend</option>
+				</select>
+				<br>
+
+				<label for="duur_stage">Hoe lang is de stage?</label>
+				<select id="duur_stage">
+					<option>10 weken</option>
+					<option>20 weken</option>
+				</select>
+				<br>
+
+				<label for="begin_datum">Begin datum</label>
+				<input type="date" required id="begin_datum"/>
+				<br>
+
+				<label for="werkzaamheden">Beschrijving werkzaamheden</label>
+				<textarea id="werkzaamheden" ></textarea>
+			</fieldset>
+		</form>
+	</section>
+</article>	
+<footer>&copy; Ted Voorend 2013, Frontend development</footer>
+</body>
+</html>

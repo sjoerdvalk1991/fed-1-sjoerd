@@ -1,0 +1,129 @@
+/* content */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../images/creampaper.png);
+	background-attachment:fixed;
+	background-repeat: repeat;
+}
+
+article {
+	margin: 10px 30px; 
+}
+
+h1, h2, h3, h4, h5, p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 18px;
+}
+
+h1 {
+	padding-left: 10%;
+}
+
+h2, h3, h4, h5{
+	padding-left: 5%;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+h2:active {
+	padding-left: 30%;
+	opacity: 0.1;
+}
+	
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 24px;
+	margin: 20px 10px 18px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p {
+	font-size: 16px;
+	width: 80%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+p:hover {
+	font-size: 18px;
+	border: 1px solid #6b727c;
+	border-radius: 10px; 
+	padding: 16px 16px 16px 26px;
+	margin-bottom: 10px;
+	background-color: #efefef;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+    color:#224498; 
+    	-webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all  1.2s ease;
+}
+
+a:hover{
+    color: #6aaaaa;
+transform:rotate(180deg);
+-ms-transform:rotate(180deg); /* IE 9 */
+-moz-transform:rotate(180deg); /* Firefox */
+-webkit-transform:rotate(180deg); /* Safari and Chrome */
+-o-transform:rotate(180deg); /* Opera */
+}
+
+li {
+	list-style: none;
+}
+
+section {
+	border: 1px solid #6b727c;
+	border-radius: 10px; 
+	padding: 26px 16px 20px 26px;
+	background-color: #D5D5D5;
+	width: 83%;
+	margin: 10px auto;
+ 	box-shadow: 0 0 5px 5px #ccc;
+	-webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color  0.3s ease;
+}
+
+section:hover {
+	background-color: #e5e5e5;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+
+
