@@ -506,10 +506,10 @@
 
 		/* touch */
 		.touch article a{
-			font-size: 1.2em; 
+			font-size: 1.3em; 
 		}
 		.touch a h1{
-			font-size: 1.2em; 		
+			font-size: 1.3em; 		
 		}	
 		
 		/* De hieronder weergegeven code zorgt ervoor dat bij het laden van de pagina het menu niet direct wordt getoond. */
@@ -518,14 +518,13 @@
 			.no-js .slide-trigger { display: none; }
 			.navigation { display: none; }
 		    .no-js .navigation { display: block; }
-		}
 
-		.no-touch footer section section:nth-child(-n+2){
+		.no-touch footer section section:nth-child(-n+1){
 			display: block;
 		}
 
-		.touch footer section section:nth-child(-n+2){
-		{				
+		.touch footer section section:nth-child(-n+1){
+							
 			display: none;
 		}
 
