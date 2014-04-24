@@ -2,5 +2,5 @@
 
 
 $(document).ready(function(){
-    $('.slide-trigger').collapsable();
+    $('nav div').collapsable();
 });

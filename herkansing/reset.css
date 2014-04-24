@@ -1,0 +1,40 @@
+
+
+*									{ margin: 0; padding: 0; outline: 0; vertical-align: baseline; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+html								{ overflow-y: scroll; overflow-x: hidden; }
+body								{ font: 100%/1.6 'georgia', sans-serif; color: #333; max-width: 80%; margin: 0 auto; color: #333; }
+ul, ol								{  }
+a img								{ border: 0; }
+a:hover, a:active, a:focus 			{ outline: 0; }
+img, video							{ vertical-align: 0; height: auto; width: 100%; }
+table								{ border-collapse: collapse; }
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+caption, th, td 					{ font-weight: normal; text-align: left; }
+input, textarea						{ }
+table 								{ border-collapse: separate; border-spacing: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section 							{ display: block; }

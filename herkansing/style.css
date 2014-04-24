@@ -1,0 +1,467 @@
+
+
+/*
+	TYPGROGRAPHY
+*/
+
+/* Importeren font */
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,700);
+/* Toepassen font */
+body {
+	font: 100%/1.5 'Dosis', Helvetica, Arial, sans-serif;
+	background-color: #ffffff;
+}
+p, li {
+	line-height: 2.0em;
+}
+
+span > a { background-color: #cccccc; padding: 0.3em;
+
+}
+
+a {
+	color: #555fff;
+	text-decoration: none;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-o-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+}
+a:hover {
+	color: #313131;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+h1 {
+	font-size: 2.6em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+
+
+/* Stylen van placeholder voor webkit en firefox 19+ */
+		::-webkit-input-placeholder, -moz-placeholder {
+ font: 100%/1.5 'Dosis', Helvetica, Arial, sans-serif;
+ color:#606060;
+ font-style: italic;
+}
+/* Stylen van placeholder voor webkit en firefox 19+ */
+		:-moz-placeholder { /* Firefox 18- */
+ font: 100%/1.5 'Dosis', Helvetica, Arial, sans-serif;
+ color:#606060;
+ font-style: italic;
+}
+
+/*
+	STRUCTURE
+*/
+article {
+	width: 65%;
+	float: left;
+	margin: 0 0 2em;
+}
+article > header h1 {
+	font-size: 1.8em;
+}
+article > section {
+	margin: 0 0 1em;
+}
+aside {
+	width: 30%;
+	float: right;
+}
+aside > header h1 {
+	font-size: 1.8em;
+}
+aside > section {
+	background: -moz-linear-gradient(top, #f26734 0%, #f68446);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f26734), to(#f68446));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	-moz-box-shadow:
+ 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-box-shadow:
+ 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.6);
+	box-shadow:
+ 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+	margin: 0 0 3em;
+	padding: 5px;
+}
+aside > section > header h1 {
+	font-size: 1.4em;
+	padding-left: 5px;
+}
+aside > section > header h1 + h1 {
+	font-size: 1.2em;
+	font-style: italic;
+}
+aside > section > p {
+	padding: 5px;
+	margin: 5px;
+}
+aside > section > p > a {
+	padding: 5px;
+	margin: 5px;
+	text-decoration: underline;
+}
+section + a, footer + a {
+	display: none;
+}
+/*
+	HEADER
+*/
+body > figure {
+	float: left;
+	margin: 0 0 5em;
+}
+body > header {
+	clear: both;
+}
+/* 	
+	MENU  
+*/
+
+nav {
+	position: fixed;
+	top: 0;
+	right: -1em;
+	width: 4em;
+	margin: 0;
+	font-size: 1.1em;
+	padding: 0 1em;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s;
+}
+
+
+	
+nav ul {
+	list-style: none;
+}
+nav ul li a {
+	color: #f16723;
+	display: block;
+	padding-left: 0.5em;
+}
+nav ul li a:hover {
+	color: #555fff;
+}
+nav ul li:first-child {
+	margin-left: 0;
+}
+nav ul li:last-child {
+	margin: 0;
+}
+nav > a {
+	display: none;
+	color: #000;
+	padding: 0.3em 0;
+	text-align: center;
+}
+
+nav.expand {
+	width: 11em;
+	background-color: #fff;
+	height: 100%;
+	overflow-x: scroll;
+	z-index: 1000000;
+	box-shadow: 0px 0px 30px #333;
+}
+nav ul {
+	display: none;
+	height: auto;
+}
+nav ul li {
+	display: block;
+	margin: 0;
+	float: none;
+	text-align: left;
+	width: 100%;
+}
+nav ul li ul {
+	display: block !important;
+	position: relative !important;
+	background: #f1f1f1 !important;
+}
+nav ul li ul li {
+	background-color: #eee;
+	text-align: left;
+	padding-left: 1em;
+}
+nav > a {
+	display: block;
+	position: relative;
+	background: #ececec;
+}
+nav > a:after {
+	content:"";
+	display: inline-block;
+}
+/*
+	HOME - OPLEIDING
+*/
+
+article > section ol li {
+	margin-left: 1.3em;
+}
+ol li {
+	background: #dddddd;
+	padding: .5em;
+	margin: 0;
+}
+/* Dit blok geldt voor elke *tweede* li in een ol */
+ol li:nth-child(2n) {
+	background: none;
+}
+/*
+	AANMELDEN
+*/
+/* Dit blok geldt voor alle input-elementen */
+fieldset > input {
+	display: block;
+	width: 100%;
+	background-color: #CDCDFF;
+	box-sizing: border-box;
+	border-radius: .3em;
+	-webkit-box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+	-moz-box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+	box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+	border: none;
+	margin: .3em 0;
+	padding: .2em .2em .2em .5em;
+}
+/* Dit blok geldt voor een input die focus heeft */
+fieldset > input:focus {
+	-webkit-box-shadow: inset .3em .3em .6em rgba(0,0,0,.5);
+	-moz-box-shadow: inset .3em .3em .6em rgba(0,0,0,.5);
+	box-shadow: inset .3em .3em .6em rgba(0,0,0,.5);
+	padding: .4em .2em .4em .5em;
+	outline: none;
+}
+
+		/* Fieldset die required is en niet aan de gedefinieerde waarde voldoet */ 
+fieldset > input:invalid, fieldset > textarea:invalid {
+ background-color: #CD9B9B;
+}
+fieldset {
+	border: 0;
+	border-radius: 1em;
+	box-shadow: 0 0 1em currentColor;
+	padding: 1em;
+}
+fieldset:last-of-type {
+	margin-bottom: 50px;
+}
+fieldset > legend {
+	padding-top: 50px;
+	font-size: 1.2em;
+}
+fieldset > legend + ol {
+	padding: 2em 0 0;
+	list-style: none;
+}
+fieldset > label {
+	display: block;
+	width: 100%;
+}
+fieldset > input,  fieldset > select {
+	color:#606060;
+	font: 100%/1.5 'Dosis', Helvetica, Arial, sans-serif;
+}
+fieldset > select {
+	width: 100%;
+	border-radius: .3em;
+	-webkit-box-shadow: .1em .1em .2em rgba(0,0,0,.5);
+	-moz-box-shadow: .1em .1em .2em rgba(0,0,0,.5);
+	box-shadow: .1em .1em .2em rgba(0,0,0,.5);
+	border: none;
+	margin: .3em 0;
+	padding: .3em .3em .3em .5em;
+	background-color: #9CBA7F;
+	border:1px solid rgba(0,0,0,.1);
+	outline: none;
+}
+form input:focus {
+	box-shadow: inset .1em .1em .1em rgba(0,0,0,0),  0 0 0 .2em #f16723;
+	padding: 	.4em .2em;
+	transform:scale(1.1);
+	-ms-transform:scale(1.1); /* IE 9 */
+	-moz-transform:scale(1.1); /* Firefox */
+	-webkit-transform:scale(1.1); /* Safari and Chrome */
+	-o-transform:scale(1.1); /* Opera */
+	font-size: 1.0em;
+}
+form textarea:focus {
+	box-shadow: inset .1em .1em .1em rgba(0,0,0,0),  0 0 0 5px #f16723;
+	padding: 	.4em .2em;
+	transform:scale(1.1);
+	-ms-transform:scale(1.1); /* IE 9 */
+	-moz-transform:scale(1.1); /* Firefox */
+	-webkit-transform:scale(1.1); /* Safari and Chrome */
+	-o-transform:scale(1.1); /* Opera */
+	font-size: 1.0em;
+}
+form input[type="submit"]:focus {
+	box-shadow: 0 0 0;
+	transform: none;
+	-ms-transform: 0; /* IE 9 */
+	-moz-transform: 0; /* Firefox */
+	-webkit-transform: 0; /* Safari and Chrome */
+	-o-transform: 0; /* Opera */
+}
+/*
+	FOOTER
+*/
+footer {
+	clear: both;
+	border-top: solid 2px #ddd;
+	margin: 5em 0 0;
+	padding: 2em 0 0;
+}
+footer > section {
+	float: left;
+	width: 33%;
+	border-bottom: solid 1px #000;
+	padding-bottom: 1em;
+	padding-left: 1em;
+}
+footer > section header h1 {
+	font-size: 1.4em;
+}
+footer > section:first-child ul li ul {
+	display: none;
+}
+footer > section:first-child ul li:hover > ul {
+	display: block;
+}
+footer > section:nth-child(2) ul {
+	list-style: none;
+}
+footer > section:nth-child(4) {
+	clear: both;
+	width: 50%;
+	margin: 1em 0 0;
+}
+footer > section:nth-child(5) {
+	width: 50%;
+	margin: 1em 0 0;
+}
+/*
+	MODERNIZR
+*/
+.touch {
+	font-size: 110%;
+}
+.boxshadow form fieldset {
+	border: solid 1px #ddd;
+}
+.touch footer section:first-child {
+	display: none;
+}
+.touch article a {
+	font-size: 1.3em;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* = MEDIA QUERIES
+------------------------------------------------------------------------------- */
+/*
+	MEDIA QUERY SMARTPHONE
+*/
+@media only screen and (max-width : 480px) {
+/*navigatie voor mobiel*/ 
+
+
+
+
+aside {
+	width:100%;
+	float: none;
+}
+body > figure {
+	float: left;
+	margin: 0;
+}
+}
+
+/*
+	MEDIA QUERY SMARTPHONE PORTRAIT
+*/
+@media (max-width: 768px) {
+article {
+	width: 100%;
+}
+/*a-side komt onderaan de pagina*/ 
+aside {
+	width: 100%;
+	float: none;
+}
+footer > section {
+	float: none;
+	width: 100% !important;
+	margin: 1em 0 0;
+}
+section + a, footer + a {
+	display: block;
+	font-size: 1.6em;
+	text-decoration: none;
+	color: #ff6633;
+	font-weight: bold;
+}
+}
+
+
+
+/*
+	MEDIA QUERY TABLET LANDSCAPE AND PORTRAIT
+*/
+@media (max-width: 979px) {
+body > figure {
+	float: left;
+	margin: 0 0 8em;
+}
+
+a {
+	color: #0000AC;
+	;
+	text-decoration: none;
+	-webkit-transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+}
+a:hover {
+	color: #111;
+	text-decoration: none;
+}
+}
+
+
+
+/* 
+	MEDIA QUERY DESKTOP
+*/
+@media only screen and (min-width: 1224px) {
+section + a, footer + a {
+	display: none;
+}
+}

@@ -83,7 +83,7 @@
 			background: none;
 		}
 
-		.wrapper{
+		footer > section{
 			width:90%;
 			margin:0 5%;
 		}
@@ -96,7 +96,7 @@
 
 	/* Logo */
 
-	.logo {
+	body > section > header > img {
 		border-radius: 0 0 16px 16px;
 		border: solid 1px rgba(0, 0, 0,0.3);
 	}
@@ -217,7 +217,7 @@
 			width: 25%;
 		}
 
-		#searchbox form {
+		header > form {
 			float: right;
 			width: 100%;
 		}
@@ -229,10 +229,7 @@
 			background-color: #f16529;
 		}
 
-		aside > article,
-		#main > section > header,
-		#main > nav > ul > li a
-		{ 
+		aside > article{ 
 
 			background: -moz-linear-gradient(top, #f26734 0%, #f68446);
 			background: -webkit-gradient(linear, left top, left bottom, from(#f26734),to(#f68446));
@@ -754,7 +751,7 @@
 
 	@media only screen and (min-width: 1140px) {
 
-		.wrapper {
+		body > section > header {
 			width:1026px;
 			margin:0 auto;
 		}
